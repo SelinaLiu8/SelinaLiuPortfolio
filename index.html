@@ -9,30 +9,57 @@
 </head>
 <body>
     <header>
-        <a href="#"><img src="Images/Selina-Logo (1).svg" alt="Logo"></a>
-        <button class="hamburger">☰</button>
-        <nav>
-            <ul class="nav-list">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
+        <nav class="navbar">
+            <a href="index.html"><img src="Images/Selina-Logo (1).svg" alt="Logo" class="logo"></a>
+            <ul class="nav-menu">
+                <li class="nav-item nav-item1"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item nav-item2"><a href="work.html" class="nav-link">Work</a></li>
+                <li class="nav-item nav-item3"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="profile">
-            <img src="Images/Headshot.png" alt="profile_photo">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
+        <div id="home">
+            <div class="profile">
+                <img src="Images/Headshot.png" alt="profile_photo">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <h1>I'm Selina Liu</h1>
+            <h1>I'm a Designer</h1>
+            <button class="resume-btn btn" onclick="openResume()">My Resume</button>
+            <a href="#about">Learn more about me</a>
         </div>
-        <h1>I'm Selina Liu</h1>
-        <h1>I'm a Designer</h1>
-        <button>My Resume</button>
-        <a href="#">Learn more about me</a>
+        <div id="about">
+            <img src="images/IMG_9300.jpg" alt="picture of me in Chicago" class="about-img about-1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas integer eget aliquet. Fermentum et sollicitudin ac orci phasellus egestas tellus. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Risus commodo viverra maecenas accumsan lacus vel facilisis volutpat. A diam maecenas sed enim. Nisl nisi scelerisque eu ultrices vitae auctor eu. Nulla facilisi morbi tempus iaculis urna id. Nunc vel risus commodo viverra. In nulla posuere sollicitudin aliquam ultrices sagittis orci. Tortor id aliquet lectus proin nibh nisl condimentum id venenatis. Facilisis gravida neque convallis a cras semper auctor neque. Condimentum mattis pellentesque id nibh tortor id.</p>
+            <img src="images/IMG_5336.JPG" alt="picture of me and friends at Umich game" class="about-img about-2">
+            <p>Vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Massa placerat duis ultricies lacus sed turpis tincidunt. Lacus vel facilisis volutpat est velit egestas dui. Sem et tortor consequat id porta nibh venenatis cras sed. Lectus magna fringilla urna porttitor. Habitasse platea dictumst vestibulum rhoncus. Enim ut tellus elementum sagittis vitae et leo duis ut. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Eu feugiat pretium nibh ipsum. Egestas sed sed risus pretium. Urna neque viverra justo nec ultrices dui sapien eget. Suspendisse interdum consectetur libero id faucibus nisl. Condimentum id venenatis a condimentum vitae sapien pellentesque habitant morbi.</p>
+            <button class="view-work-btn" onclick="viewMyWorkBtn()">View My Work</button>
+        </div>
     </main>
+    <footer>
+        <ul class="footer-list">
+            <li class="footer-icon">
+                <a href="http://www.linkedin.com/in/selina-liu-5b40781b8">Linkedin</a>
+            </li>
+            <li class="footer-icon">
+                <a href="https://github.com/SelinaLiu8">GitHub</a>
+            </li>
+            <li class="footer-icon">
+                <a href="mailto: selinal@umich.edu">Email</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>
