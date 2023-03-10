@@ -1,6 +1,5 @@
 const burger = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav-menu");
-const menuItem = document.querySelector(".nav-item");
 
 function viewMyWorkBtn() {
     window.location.href = "work.html";
@@ -19,6 +18,6 @@ burger.addEventListener("click", () => {
     toggleNav();
 })
 
-menuItem.addEventListener("click", () => {
+document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
     toggleNav();
-})
+}))
