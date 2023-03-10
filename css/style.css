@@ -10,11 +10,11 @@
     --orange-color: #F87D39;
     --gray-color: #6D6D6D;
     --white-color: #ffffff;
-    --font-h1: 4rem;
-    --font-h2: 2.75rem;
-    --font-h3: 2.2rem;
-    --font-btn: 1.25rem;
-    --font-p: 1rem;
+    --font-h1: 2.5rem;
+    --font-h2: 2rem;
+    --font-h3: 1.75rem;
+    --font-btn: 1rem;
+    --font-p: 0.75rem;
 }
 
 @media screen and (min-width: 965px) {
@@ -60,7 +60,7 @@ button {
 }
 
 .btn {
-    padding: 20px 30px;
+    padding: 1em 2em;
     background-color: var(--gray-color);
     border-radius: 12px;
     font-size: var(--font-btn);
@@ -185,7 +185,7 @@ header {
 
 /* home */
 #home {
-    margin-top: 100px;
+    margin-top: 4em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -194,7 +194,7 @@ header {
 .profile {
     display: flex;
     justify-content: center;
-    padding: 70px;
+    padding: 3em;
 }
 
 .profile-back {
@@ -203,7 +203,7 @@ header {
 }
 
 .profile-img {
-    max-width: 15em;
+    max-width: 12em;
 }
 
 .home-title {
@@ -217,8 +217,7 @@ header {
 .triangle {
     position: absolute;
     z-index: -1;
-    max-width: 30em;
-    height: 260px;
+    max-height: 13em;
 }
 
 .resume-btn {
@@ -255,8 +254,27 @@ header {
     margin: 40px;
 }
 
+@media screen and (min-width: 965px) {
+    #home {
+        justify-content: flex-start;
+    }
+
+    .profile {
+        position: absolute;
+        left: 2em;
+    }
+
+    .profile-img {
+        max-width: 20em;
+    }
+
+    .triangle {
+        max-height: 30em;
+    }
+}
+
  /* Work */
- 
+
 
 /* Footer */
 footer {
