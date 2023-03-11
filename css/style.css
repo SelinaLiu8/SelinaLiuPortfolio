@@ -275,6 +275,43 @@ header {
 
  /* Work */
 
+.project {
+    margin: 50px;
+    padding: 1em;
+    height: 22em;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project:active {
+    box-shadow: none;
+    transition: 0.1s;
+}
+
+.project:nth-child(odd) {
+    background-color: var(--purple-color);
+}
+
+.project:nth-child(even) {
+    background-color: var(--orange-color);
+}
+
+.project-img {
+    background-color: white;
+    max-height: 50%;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    padding: 1em;
+}
+
+.project-title {
+    margin: 0.3em 0;
+}
 
 /* Footer */
 footer {
