@@ -67,6 +67,7 @@ button {
     color: var(--white-color);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
     transition: 0.3s;
+    font-weight: bold;
 }
 
 .btn:hover {
@@ -211,6 +212,7 @@ header {
 }
 
 .name {
+    font-weight: bolder;
     color: var(--purple-color);
 }
 
@@ -229,7 +231,7 @@ header {
 }
 
 .multi-text {
-    font-weight: bold;
+    font-weight: bolder;
     color: var(--orange-color);
 }
 
@@ -251,10 +253,13 @@ header {
 }
 
 .view-work-btn {
-    margin: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 4em auto;
 }
 
 @media screen and (min-width: 965px) {
+    /* home */
     #home {
         justify-content: flex-start;
     }
@@ -270,6 +275,35 @@ header {
 
     .triangle {
         max-height: 30em;
+    }
+
+    /* about */
+    #about {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        margin: auto;
+    }
+
+    .about-1, .about-p2 {
+        grid-column: 1 / 2;
+    }
+
+    .about-2, .about-p1 {
+        grid-column: 2 / 3;
+    }
+
+    .about-1, .about-p1 {
+        grid-row: 1 / 2;
+    }
+
+    .about-2, .about-p2 {
+        grid-row: 2 / 3;
+    }
+
+    .about-img, .about-p {
+        margin: 10px;
     }
 }
 

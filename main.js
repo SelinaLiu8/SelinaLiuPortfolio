@@ -18,6 +18,13 @@ burger.addEventListener("click", () => {
     toggleNav();
 })
 
+// TODO: fix the code so it only effects mobile
+
 document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {
-    toggleNav();
+    if (window.matchMedia("min-width: 965").matches) {
+        return;
+    }
+    else {
+        toggleNav();
+    }
 }))
