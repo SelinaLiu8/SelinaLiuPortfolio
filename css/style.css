@@ -261,7 +261,11 @@ header {
 @media screen and (min-width: 965px) {
     /* home */
     #home {
-        justify-content: flex-start;
+        height: 100vh;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: -70px;
+        margin-right: 3em;
     }
 
     .profile {
@@ -275,6 +279,14 @@ header {
 
     .triangle {
         max-height: 30em;
+    }
+
+    .home-title {
+        text-align: start;
+    }
+
+    .learn-about-link {
+        margin: 0 auto;
     }
 
     /* about */
