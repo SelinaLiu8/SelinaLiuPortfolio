@@ -60,7 +60,7 @@ button {
 }
 
 .btn {
-    padding: 1em 2em;
+    padding: 20px 40px;
     background-color: var(--gray-color);
     border-radius: 12px;
     font-size: var(--font-btn);
@@ -205,6 +205,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
 }
 
 .profile {
@@ -250,6 +251,17 @@ header {
     color: var(--orange-color);
 }
 
+.home-title-container {
+    text-align: center;
+}
+
+.home-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /* about */
 #about {
     display: flex;
@@ -276,32 +288,26 @@ header {
 @media screen and (min-width: 965px) {
     /* home */
     #home {
-        height: 100vh;
-        align-items: flex-end;
-        justify-content: center;
-        margin-top: -70px;
-        margin-right: 3em;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
     }
 
-    .profile {
-        position: absolute;
-        left: 2em;
+    .home-title-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .profile-img {
-        max-width: 20em;
+    .home-link {
+        align-items: flex-start;
+        width: 100%;
     }
 
-    .triangle {
-        max-height: 30em;
-    }
-
-    .home-title {
-        text-align: start;
-    }
-
-    .learn-about-link {
-        margin: 0 auto;
+    .resume-btn {
+        margin: 0;
+        width: 50%;
     }
 
     /* about */

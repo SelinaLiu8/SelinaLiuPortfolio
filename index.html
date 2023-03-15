@@ -30,7 +30,6 @@
     </header>
     <main id="home-about-page">
         <div id="home">
-            <h1 class="home-title home-title-name">I'm <strong><span class="name">Selina Liu<span></strong></h1>
             <div class="profile">
                 <div class="profile-back">
                     <img src="images/Polygon.png" alt="triangle" class="triangle">
@@ -43,14 +42,19 @@
                 <div class="circle"></div>
                 <div class="circle"></div>
             </div>
-            <h1 class="home-title home-title-position">I'm a <span class="multi-text"></span></h1>
-            <button class="resume-btn btn" onclick="openResume()">My Resume</button>
-            <a class="learn-about-link" href="#about">Learn more about me</a>
+            <div class="home-title-container">
+                <h1 class="home-title home-title-name">I'm <strong><span class="name">Selina Liu<span></strong></h1>
+                <h1 class="home-title home-title-position">I'm a <span class="multi-text"></span></h1>
+                <div class="home-link">
+                    <button class="resume-btn btn" onclick="openResume()">My Resume</button>
+                    <a class="learn-about-link" href="#about">Learn more about me</a>
+                </div>
+            </div>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
             var typingEffect = new Typed(".multi-text", {
-                strings: ["designer", "coder"],
+                strings: ["designer", "developer"],
                 loop: true,
                 typeSpeed: 100,
                 backSpeed: 80,
