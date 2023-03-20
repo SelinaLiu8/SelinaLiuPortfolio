@@ -228,7 +228,7 @@ header {
 }
 
 .name {
-    font-weight: bolder;
+    font-weight: 800;
     color: var(--purple-color);
 }
 
@@ -247,7 +247,8 @@ header {
 }
 
 .multi-text {
-    font-weight: bolder;
+    text-transform: capitalize;
+    font-weight: 800;
     color: var(--orange-color);
 }
 
@@ -300,14 +301,24 @@ header {
         align-items: flex-start;
     }
 
+    .home-title {
+        width: 8em;
+        text-align: start;
+    }
+
     .home-link {
         align-items: flex-start;
         width: 100%;
+        margin: 3em 0;
     }
 
     .resume-btn {
         margin: 0;
-        width: 50%;
+        width: 10em;
+    }
+
+    .learn-about-link {
+        margin-top: 3em;
     }
 
     /* about */
