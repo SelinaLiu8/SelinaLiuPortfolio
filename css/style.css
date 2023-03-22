@@ -415,6 +415,7 @@ header {
 
 .project-title {
     margin: 0.3em 0;
+    padding-bottom: 0;
 }
 
 .project-describtion {
@@ -556,3 +557,36 @@ footer {
 .project-task-list li{
     list-style: circle;
 }
+
+#website-project .project-ind-img {
+    background-color: var(--orange-color);
+}
+
+.project-gallery {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: dense;
+}
+
+.project-gallery img {
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    border: solid 5px var(--gray-color);
+    transition: 0.3s;
+}
+
+.project-gallery img:hover {
+    scale: 1.1;
+    transition: 0.3s;
+}
+
+@media screen and (min-width: 965px) {
+    .project-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-flow: dense;
+    }
+}
+
