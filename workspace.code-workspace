@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../node_modules/swup"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "SelinaLiuPortfolio"
+	}
+}
