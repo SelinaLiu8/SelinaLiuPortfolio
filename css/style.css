@@ -370,6 +370,12 @@ header {
 }
 
  /* Work */
+.work-page-title {
+    display: block;
+    margin-left: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 
 .project {
     margin: 50px;
@@ -424,7 +430,7 @@ header {
 }
 
 @media screen and (min-width: 965px) {
-    #work-page {
+    .all-project {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
