@@ -140,6 +140,10 @@ header {
     color: var(--orange-color);
 }
 
+.line {
+    background-color: var(--orange-color);
+}
+
 .burger {
     display: none;
     cursor: pointer;
@@ -181,6 +185,14 @@ header {
 }
 
 @media screen and (min-width: 965px){
+    .line {
+        border-radius: 15px;
+        padding: 0 10px;
+        display: block;
+        height: 4px;
+        border: solid var(--orange-color) 2px;
+    }
+
     .logo {
         z-index: 3;
     }
@@ -377,6 +389,11 @@ header {
     margin-bottom: 2%;
 }
 
+.work-portfolio {
+    font-weight: bold;
+    color: var(--orange-color);
+}
+
 .project {
     margin: 50px;
     padding: 1em;
@@ -422,7 +439,7 @@ header {
 
 .project-title {
     margin: 0.3em 0;
-    padding-bottom: 0;
+    font-size: var(--font-h3);
 }
 
 .project-describtion {
@@ -546,7 +563,6 @@ footer {
 
 .project-title {
     text-align: center;
-    margin-bottom: 1em;
 }
 
 .project-btn-list {
@@ -565,7 +581,7 @@ footer {
     list-style: circle;
 }
 
-#website-project .project-ind-img {
+#website-project .project-ind-img, #uevent-project .project-ind-img, #pg-project .project-ind-img, #gd-project .project-ind-img{
     background-color: var(--orange-color);
 }
 

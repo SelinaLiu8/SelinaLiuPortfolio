@@ -25,6 +25,13 @@ if (window.matchMedia("(max-width: 964px)").matches) {
     }))
 }
 
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll(".nav-link").forEach(link => {
+    if (link.href.includes(`${activePage}`)) {
+        link.classList.add("line");
+    }
+})
+
 // Dots background
 // const container = document.querySelector('.dots-container');
 // const about = document.getElementById("about");
