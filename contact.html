@@ -35,33 +35,36 @@
         </nav>
     </header>
     <main id="contact-page">
-        <h3 class="contact-me">Contact Me!</h3>
-        <p class="my-phone">My phone number: 734-972-5295</p>
-        <p class="my-email">My email: <a href="mailto: selinal@umich.edu">selinal@umich.edu</a></p>
-        <form  class="contact-form" action="https://formspree.io/f/xpzelwlo" method="POST">
-            <label class="contact-item contact-name">
-                <input type="name" name="name" placeholder="name" for="input-field" required>
-            </label>
-            <label class="contact-item contact-email">
-                <input type="email" name="email" placeholder="email" for="input-field" required>
-            </label>
-            <label class="contact-item contact-text">
-                <textarea name="message" placeholder="Write your message here."></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button class="send-btn" type="submit">Send</button>
-        </form>
+        <div class="contact-area">
+            <h3 class="contact-me">Contact Me!</h3>
+            <p class="my-phone">My phone number: 734-972-5295</p>
+            <p class="my-email">My email: <a href="mailto: selinal@umich.edu">selinal@umich.edu</a></p>
+            <form  class="contact-form" action="https://formspree.io/f/xpzelwlo" method="POST">
+                <label class="contact-item contact-name">
+                    <input type="name" name="name" placeholder="name" for="input-field" required>
+                </label>
+                <label class="contact-item contact-email">
+                    <input type="email" name="email" placeholder="email" for="input-field" required>
+                </label>
+                <label class="contact-item contact-text">
+                    <textarea name="message" placeholder="Write your message here."></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button class="send-btn" type="submit">Send</button>
+            </form>
+        </div>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.2208475133116!2d-83.74667172300698!3d42.273808840544994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883cae39b5f38965%3A0xf98d973017bfd628!2s406%20Packard%20St%2C%20Ann%20Arbor%2C%20MI%2048104!5e0!3m2!1sen!2sus!4v1681770301447!5m2!1sen!2sus" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </main>
     <footer>
         <ul class="footer-list">
             <li class="footer-icon">
-                <a href="http://www.linkedin.com/in/selina-liu-5b40781b8"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="http://www.linkedin.com/in/selina-liu-5b40781b8" aria-label="linkedin"><i class="fa-brands fa-linkedin"></i></a>
             </li>
             <li class="footer-icon">
-                <a href="https://github.com/SelinaLiu8"><i class="fa-brands fa-github"></i></a>
+                <a href="https://github.com/SelinaLiu8" aria-label="github"><i class="fa-brands fa-github"></i></a>
             </li>
             <li class="footer-icon">
-                <a href="mailto: selinal@umich.edu"><i class="fa-solid fa-envelope"></i></a>
+                <a href="mailto: selinal@umich.edu" aria-label="email"><i class="fa-solid fa-envelope"></i></a>
             </li>
         </ul>
         <p class="footer-text">Created by Selina Liu</p>
