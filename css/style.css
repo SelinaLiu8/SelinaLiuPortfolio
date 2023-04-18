@@ -144,6 +144,8 @@ header {
 
 .line {
     background-color: var(--orange-color);
+    padding: 5px 20px;
+    border-radius: 15px;
 }
 
 .burger {
@@ -192,6 +194,8 @@ header {
         right: -100%;
         top: 70px;
         left: 100%;
+        border-radius: 15px;
+        box-shadow: 0 10px 10px rgba(137, 137, 137, 0.5);
     }
 
     .nav-menu.active {
@@ -217,6 +221,8 @@ header {
     }
 
     .nav-menu {
+        box-shadow: none;
+        left: 0;
         z-index: 0;
         position: relative;
         top: 0;
