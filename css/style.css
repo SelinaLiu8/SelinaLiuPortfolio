@@ -514,6 +514,10 @@ header {
     height: 20em;
 }
 
+input, textarea {
+    margin-top: 5px;
+}
+
 label[for="input-field"]::after {
     content: " *";
     color: red;
